@@ -116,8 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Created by `pipx` on 2025-02-09 07:27:08
-export PATH="$PATH:/home/erik/.local/bin"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -134,3 +132,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Add ssh private key to the ssh agent
+ssh-add $HOME/.ssh/id_ed25519.key &>/dev/null
