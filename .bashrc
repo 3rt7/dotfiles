@@ -134,3 +134,6 @@ unset __conda_setup
 
 # Add ssh private key to the ssh agent
 ssh-add $HOME/.ssh/id_ed25519.key &>/dev/null
+
+# system binaries
+export PATH=$PATH:/usr/sbin/
